@@ -1,0 +1,11 @@
+{% extends './base.html' %} {% block title %}Plantilla{% endblock %} {% block
+customCSS %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/user.css') }}"
+/>
+{% endblock %} {% block body %}
+
+<iframe src="{{ url_for('static', filename='charcateristics/plantilla.html') }}" frameborder="0" style="width:50%; height: 50%; border-style: solid;border: groove;"></iframe>
+
+{% endblock %}
